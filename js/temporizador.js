@@ -120,10 +120,14 @@ iniciar.addEventListener("click", iniciarTemp = () => {
             horasUsuario--
             minutosUsuario = 59
         }
-
     }
-    
-
+    //solo si hay horas y segundos
+    if(horasUsuario != 0 && minutosUsuario == 0 &&  segundosUsuario != 0){
+        segundosUsuario--
+        minutosUsuario = 59
+        horasUsuario = horasUsuario - 1
+        
+    }
 
     if(segundosUsuario == 00 && minutosUsuario == 00 && horasUsuario == 00){
         clearInterval(intervalo);
@@ -140,7 +144,7 @@ iniciar.addEventListener("click", iniciarTemp = () => {
         segundo.innerHTML = `${segundosUsuario}`;
 
     iniciar.disabled = true
-    } ,1) 
+    } ,1000) 
 
 }
 })
