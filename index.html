@@ -15,11 +15,15 @@
     <div class="container">
         <div class="reloj d-flex align-items-center align-content-center text-center row">
         <p class="fs-3 text-white">Tiempo</p>
-        <p id="cronometro" class="fs-1 text-white">00:00:00</p>
+        <div id="temporizador" class="fs-1 text-white d-flex justify-content-center">
+            <p id="hora">00:</p>
+            <p id="minuto">00:</p>
+            <p id="segundo">00</p>
+        </div>
         <div>
-            <button type="button" id="iniciar" class="btn btn-outline-white text-white border rounded-4" onclick="iniciarCron()">Iniciar</button>
-            <button type="button" id="pausar" class="btn btn-outline-white text-white border rounded-4" onclick="pausarCron()">Pausar</button>
-            <button type="button" id="reset" class="btn btn-outline-white text-white border rounded-4" onclick="resetCron()">Reset</button>
+            <button type="button" id="iniciar" class="btn btn-outline-white text-white border rounded-4">Iniciar</button>
+            <button type="button" id="pausar" class="btn btn-outline-white text-white border rounded-4">Pausar</button>
+            <button type="button" id="reset" class="btn btn-outline-white text-white border rounded-4">Reset</button>
         </div>
 
         </div>
