@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, blue, white);
+}
+
+.reloj {
+  background-color: gray;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 100%;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+
+.btn {
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  background-color: rgb(123, 111, 233);
+  color: black;
+}/*# sourceMappingURL=estilos.css.map */
